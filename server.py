@@ -2,14 +2,14 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from apscheduler.schedulers.blocking import BlockingScheduler
-from getData import Get
+
+
 from pprint import pprint
 from pydantic import BaseModel
 
-class Item(BaseModel):
-    begin_time: int
-    end_time: int
-    member: int
+
+from getData import Get
+
 
 app = FastAPI()
 
@@ -31,7 +31,7 @@ def root(begin_time: int = Query(None), end_time: int = Query(None), member:int 
 
 @app.get("/")
 def root():
-    return "pa"
+    return "error!"
 
 
 if __name__ == "__main__":

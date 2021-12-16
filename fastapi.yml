@@ -1,0 +1,34 @@
+name: fastapi
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - defaults
+dependencies:
+  - ca-certificates
+  - certifi
+  - openssl
+  - pip=21.2.4
+  - python=3.9.6
+  - setuptools
+  - sqlite=3.36.0
+  - tzdata
+  - wheel=0.37.0=pyhd3eb1b0_1
+  - pip:
+    - asgiref==3.4.1
+    - charset-normalizer==2.0.6
+    - click==8.0.1
+    - fastapi==0.68.1
+    - h11==0.12.0
+    - httptools==0.2.0
+    - idna==3.2
+    - pydantic==1.8.2
+    - python-dotenv==0.19.0
+    - pyyaml==5.4.1
+    - requests==2.26.0
+    - starlette==0.14.2
+    - typing-extensions==3.10.0.2
+    - urllib3==1.26.7
+    - uvicorn==0.15.0
+    - watchgod==0.7
+    - websockets==10.0
